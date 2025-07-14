@@ -1,6 +1,59 @@
 <!doctype html>
-<html lang="en" class="light normal">
+<html lang="en" dir="ltr" class="light normal ">
 <head>
+<a href="https://t.me/srpcomgroup">
+  <img src="https://raw.githubusercontent.com/srpcom/netlify/main/logo%20kecil%20srpcom.png" alt="SRPCOM Logo" style="height: 60px;">
+</a>
+
+<style>
+    body {
+        background: linear-gradient(to right, #500000, #800000);
+        color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .card {
+        background: rgba(255, 0, 0, 0.1);
+        border: 1px solid rgba(255, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+        border-radius: 16px;
+        padding: 20px;
+        box-shadow: 0 4px 20px rgba(255, 0, 0, 0.3);
+    }
+
+    header#main-header, footer#main-footer {
+        background-color: rgba(80, 0, 0, 0.8);
+        backdrop-filter: blur(6px);
+        border-bottom: 1px solid rgba(255, 0, 0, 0.2);
+        border-top: 1px solid rgba(255, 0, 0, 0.2);
+    }
+
+    h1, h2, h3, h4 {
+        color: #ff4d4d !important;
+    }
+
+    .uk-button-primary {
+        background-color: #ff1a1a !important;
+        border-color: #cc0000;
+    }
+
+    .dot.is-grey {
+        background-color: #ff4d4d !important;
+    }
+
+    .psp-monitor-preloader div {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .uk-container {
+        max-width: 1200px;
+    }
+
+    .enter-fullscreen, .toggle-notif {
+        color: #ff9999 !important;
+    }
+</style>
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +65,7 @@
 
     <!-- Styles -->
     <link href="/assets/css/app.min.css?id=31ae23ef349a1b38eee3" rel="stylesheet">
-
+    
     <link rel="stylesheet" type="text/css" href="/vendor/cookie-consent/css/cookie-consent.css">
 
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -22,7 +75,7 @@
     
         
     <script>
-        window.translations = {"announcement":{"title":"Status updates","end_date_text":"Ends","updated_on":"Updated on","expired_date_text":"Ended","next":"Next","prev":"Previous","title_active":"There are %s active announcement(s)","title_archived":"There are %s archived announcement(s)","title_both":"There are %s active and %s archived announcement(s)"},"common":{"language_encode":"en-US","language_encode_short":"en","title":"Uptime Robot","login":"Submit","enter_password":"Enter the password...","monitors":"Monitors","status":"Status","back":"Back to list","logout":"Logout","event":"Event","date_time":"Date-Time","reason":"Reason","duration":"Duration","response_time":"Response Time","latest_events":"Latest events for %s","type":"Type","uptime":"Uptime","overall_uptime":"Overall Uptime","info":"Info","info_text":"This status page is a summary for the uptime\/downtime of the monitors listed above.","generated_text":"This data is being generated","latest_downtime_title":"Latest Downtime","quick_stats":"Quick Stats","load_more":"Load More Logs","last_hours":"Last %s hours","last_days":"Last %s days","no_downtime":"(No downtime)","downtime_minutes":"(%s minutes of downtime)","latest_downtime":"It was recorded (for the monitor %s) on %s and the downtime lasted for %s.","no_downtime_log":"No downtime recorded.","monitors_down":"%s monitors down","all_clear":"All Clear","checked_every_minute":"Checked every minute","checked_every_minutes":"Checked every %s minutes","refreshing_in":"Next update in <span class=\"counter\">%s<\/span> sec.","unknown":"unknown","up":"Up","total":"Total","down":"Down","paused":"Paused","miliseconds":"Miliseconds","provided_by":"Status page by","log_duration":"%s h, %s min","log_duration_min":"%s minutes","log_duration_min_sg":"%s minute","login_error":"Error","login_error_user_not_exist":"User not found.","login_error_password_wrong":"Wrong password.","login_success":"Login successful, please wait.","periods":{"daily":"Daily View","weekly":"Weekly View","monthly":"Monthly View"},"fullscreen":"Fullscreen mode","privacy_link":"Privacy policy","terms_of_service_link":"Terms of Service","calendar_view":"Calendar","updates_history_view":"Updates history view","view_full_history_link":"View full history","last_updated":"Last updated","last":"Last","days":"days","recent_events":"Recent events","load_more_events":"Load more events","load_more_logs_end":"That's all folks!","status_update_history":"Status update history","no_updates":"There are no updates in the last <span class=\"outage-days\">%s<\/span> days","no_updates_selected_range":"No updates for this date.","alert_sound":"Alert sound","off":"off","on":"on","loading":"Loading","not_found":"The content you are looking for seems to not exist.","unsubscribe":"Unsubscribe","service_status":"Service status","see_current_status":"See the current status","not_monitored":"Not monitored","operational":"Operational","some_systems_down":"Some systems down","all_systems":"All systems","this_week":"This week","history_logs":"history logs","is":"is","to":"to","no_records":"No records","detected":"detected %s","password_protected":"This status page is password protected.","reload_page":"Reload the page","fetching_error":"There was an error while fetching the data","try_again":"There was an unexpected error, please try again.","password_required":"Password field must not be empty.","status_updates":"Status updates","was":"was","no_history":"History data will be available soon","outage_count":"There were %s outages during the day.","outage_count_singular":"There were 1 outage during the day.","see_details":"See details","avg_rt":"Avg. response time","max_rt":"Max. response time","min_rt":"Min. response time","monitor_was_down_for":":monitor was down for :duration in total","for":"for","monitoring":"monitoring"},"cookie":{"title":"This website uses cookies","description":"By choosing \"Accept all cookies\" you agree to the use of cookies to help us provide you with a better user experience and to analyse website usage. By clicking \"Adjust your preferences\" you can choose which cookies to allow. Only the essential cookies are necessary for the proper functioning of our website and cannot be refused","accept_all":"Accept all cookies","only_necessary":"Accept only necessary cookies","adjust_preference":"Adjust your preferences","preference_title":"Cookie settings","preference_description":"Our website stores four types of cookies. At any time you can choose which cookies you accept and which you refuse. You can read more about what cookies are and what types of cookies we store in our %s","essential_title":"Essential cookies","essential_desc":"are necessary for technical reasons. Without them, this website may not function properly.","functional_title":"Functional cookies","functional_desc":"are necessary for specific functionality on the website. Without them, some features may be disabled.","analytical_title":"Analytical cookies","analytical_desc":"allow us to analyse website use and to improve the visitor's experience.","marketing_title":"Marketing cookies","marketing_desc":"allow us to personalise your experience and to send you relevant content and offers, on this website and other websites.","save_button":"Save my selection","close_button":"Close"},"status":{"log":{"down":"down","up":"up","started":"started","paused":"paused"},"running_again":"Running again","monitor_paused":"Monitoring %s paused","monitor_started":"Monitoring has started","down_for":"Down for %s","details":"Details","log_reason":"The log reason","new":"NEW"},"subscribe":{"header":"Subscribe to updates","description":"Subscribe to receive emails everytime %s publishes an update.","submit_button":"Subscribe","agreement":"By subscribing to status updates you agree to %s and %s.","unsubscribe_header":"Unsubscribe from updates","unsubscribe_description":"In case you do not want to receive email updates from %s any longer submit your email and we will send you an unsubscribe link.","unsubscribe_button":"Send unsubscribe link","confirm_subscription_button":"CONFIRM SUBSCRIPTION","subscription_email_title":"Subscribe to %s updates","subscription_email_description":"Hello, you have recently subscribed to %s status updates. To confirm your subscription click the link below, please.","unsubscription_email_title":"Unsubscribe from %s updates","unsubscription_email_description":"Hello, we received an unsubscribe request from %s. If it was you, please, confirm using the link below. To confirm your unsubscription click the link below, please.","confirm_unsubscription_button":"UNSUBSCRIBE","link_not_work":"If the link above does not work for you, visit this URL:","not_asked":"If you have not subscribed to these emails, please ignore this message.","sent_by":"This email was sent by","required_error":"The :attribute field is required.","invalid_email":"Invalid email","invalid_type":":attribute has to be string","psp_not_found":"Could not found status page.","subscription_not_found":"Subscription not found.","subscribe_pro_feature":"You can only subscribe to pro plan users.","successful":"Subscription successful.","already_subscribed":"This email address is already subscribed.","subscribe_limit":"You can only request a new confirmation email every hour.","submitted_again":"Subscription email sent again.","failed":"Failed","invalid_url":"Invalid URL","unsubscribed":"Unsubscribed","unsubscribe_email_successful":"This unsubscription email sent successfully.","unsubscribed_successful":"You have been successfully unsubscribed from %s status updates.","activation_link_expired":"Subscription confirmation link has expired.","invalid_activation_code":"Activation code invalid or expired.","subscribed_successful":"You have been successfully subscribed to the %s status updates","done":"\ud83c\udf89 Done!","try_again":"There was an error while subscribing. Try again, please.","mail_sent":"Success! Now check your inbox and <strong>confirm your subscription.<\/strong>"}};
+        window.translations = {"announcement":{"title":"Status updates","end_date_text":"Ends","updated_on":"Updated on","expired_date_text":"Ended","next":"Next","prev":"Previous","title_active":"There are %s active announcement(s)","title_archived":"There are %s archived announcement(s)","title_both":"There are %s active and %s archived announcement(s)"},"common":{"language_encode":"en-US","language_encode_short":"en","title":"Uptime Robot","login":"Submit","enter_password":"Enter the password...","monitors":"Monitors","status":"Status","back":"Back to list","logout":"Logout","event":"Event","date_time":"Date-Time","reason":"Reason","duration":"Duration","response_time":"Response Time","latest_events":"Latest events for %s","type":"Type","uptime":"Uptime","overall_uptime":"Overall Uptime","info":"Info","info_text":"This status page is a summary for the uptime\/downtime of the monitors listed above.","generated_text":"This data is being generated","latest_downtime_title":"Latest Downtime","quick_stats":"Quick Stats","load_more":"Load More Logs","last_hours":"Last %s hours","last_days":"Last %s days","no_downtime":"(No downtime)","downtime_minutes":"(%s minutes of downtime)","latest_downtime":"It was recorded (for the monitor %s) on %s and the downtime lasted for %s.","no_downtime_log":"No downtime recorded.","monitors_down":"%s monitors down","all_clear":"All Clear","checked_every_minute":"Checked every minute","checked_every_minutes":"Checked every %s minutes","refreshing_in":"Next update in <span class=\"counter\">%s<\/span> sec.","unknown":"unknown","up":"Up","total":"Total","down":"Down","paused":"Paused","miliseconds":"Miliseconds","provided_by":"Status page by","log_duration":"%s h, %s min","log_duration_min":"%s minutes","log_duration_min_sg":"%s minute","login_error":"Error","login_error_user_not_exist":"User not found.","login_error_password_wrong":"Wrong password.","login_success":"Login successful, please wait.","periods":{"daily":"Daily View","weekly":"Weekly View","monthly":"Monthly View"},"fullscreen":"Fullscreen mode","privacy_link":"Privacy policy","terms_of_service_link":"Terms of Service","calendar_view":"Calendar","updates_history_view":"Updates history view","view_full_history_link":"View full history","last_updated":"Last updated","last":"Last","days":"days","recent_events":"Recent events","load_more_events":"Load more events","load_more_logs_end":"That's all folks!","status_update_history":"Status update history","no_updates":"There are no updates in the last <span class=\"outage-days\">%s<\/span> days","no_updates_selected_range":"No updates for this date.","alert_sound":"Alert sound","off":"off","on":"on","loading":"Loading","not_found":"The content you are looking for seems to not exist.","unsubscribe":"Unsubscribe","service_status":"Service status","see_current_status":"See the current status","not_monitored":"Not monitored","operational":"Operational","some_systems_down":"Some systems down","all_systems":"All systems","this_week":"This week","history_logs":"history logs","is":"is","to":"to","no_records":"No records","detected":"detected %s","password_protected":"This status page is password protected.","reload_page":"Reload the page","fetching_error":"There was an error while fetching the data","try_again":"There was an unexpected error, please try again.","password_required":"Password field must not be empty.","status_updates":"Status updates","was":"was","no_history":"History data will be available soon","outage_count":"There were %s outages during the day.","outage_count_singular":"There were 1 outage during the day.","see_details":"See details","avg_rt":"Avg. response time","max_rt":"Max. response time","min_rt":"Min. response time","monitor_was_down_for":":monitor was down for :duration in total","for":"for","monitoring":"monitoring"},"cookie":{"title":"This website uses cookies","description":"By choosing \"Accept all cookies\" you agree to the use of cookies to help us provide you with a better user experience and to analyse website usage. By clicking \"Adjust your preferences\" you can choose which cookies to allow. Only the essential cookies are necessary for the proper functioning of our website and cannot be refused","accept_all":"Accept all cookies","only_necessary":"Accept only necessary cookies","adjust_preference":"Adjust your preferences","preference_title":"Cookie settings","preference_description":"Our website stores four types of cookies. At any time you can choose which cookies you accept and which you refuse. You can read more about what cookies are and what types of cookies we store in our %s","essential_title":"Essential cookies","essential_desc":"are necessary for technical reasons. Without them, this website may not function properly.","functional_title":"Functional cookies","functional_desc":"are necessary for specific functionality on the website. Without them, some features may be disabled.","analytical_title":"Analytical cookies","analytical_desc":"allow us to analyse website use and to improve the visitor's experience.","marketing_title":"Marketing cookies","marketing_desc":"allow us to personalise your experience and to send you relevant content and offers, on this website and other websites.","save_button":"Save my selection","close_button":"Close"},"status":{"log":{"down":"down","up":"up","started":"started","paused":"paused"},"running_again":"Running again","monitor_paused":"Monitoring %s paused","monitor_started":"Monitoring has started","down_for":"Down for %s","details":"Details","log_reason":"The log reason","new":"NEW"},"subscribe":{"header":"Subscribe to updates","description":"Subscribe to receive emails everytime %s publishes an update.","submit_button":"Subscribe","agreement":"By subscribing to status updates you agree to %s and %s.","unsubscribe_header":"Unsubscribe from updates","unsubscribe_description":"In case you do not want to receive email updates from %s any longer submit your email and we will send you an unsubscribe link.","unsubscribe_button":"Send unsubscribe link","confirm_subscription_button":"CONFIRM SUBSCRIPTION","subscription_email_title":"Subscribe to %s updates","subscription_email_description":"Hello, you have recently subscribed to %s status updates. To confirm your subscription click the link below, please.","unsubscription_email_title":"Unsubscribe from %s updates","unsubscription_email_description":"Hello, we received an unsubscribe request from %s. If it was you, please, confirm using the link below. To confirm your unsubscription click the link below, please.","confirm_unsubscription_button":"UNSUBSCRIBE","link_not_work":"If the link above does not work for you, visit this URL:","not_asked":"If you have not subscribed to these emails, please ignore this message.","sent_by":"This email was sent by","required_error":"The :attribute field is required.","invalid_email":"Invalid email","invalid_type":":attribute has to be string","psp_not_found":"Could not found status page.","subscription_not_found":"Subscription not found.","subscribe_pro_feature":"You can only subscribe to pro plan users.","successful":"Subscription successful.","already_subscribed":"This email address is already subscribed.","subscribe_limit":"You can only request a new confirmation email every hour.","submitted_again":"Subscription email sent again.","failed":"Failed","invalid_url":"Invalid URL","unsubscribed":"Unsubscribed","unsubscribe_email_successful":"This unsubscription email sent successfully.","unsubscribed_successful":"You have been successfully unsubscribed from %s status updates.","activation_link_expired":"Subscription confirmation link has expired.","invalid_activation_code":"Activation code invalid or expired.","subscribed_successful":"You have been successfully subscribed to the %s status updates","done":"\ud83c\udf89 Done!","try_again":"There was an error while subscribing. Try again, please.","mail_sent":"Success! Now check your inbox and <strong>confirm your subscription.<\/strong>","invalid_link":"Invalid subscription link. The link may be expired or corrupted."}};
     </script>
 
     <script>
@@ -60,7 +113,7 @@
                                                                                     </a>
                                                     </div>
                                         </div>
-                    <div class="uk-text-right@m psp-header-info uk-flex uk-flex-middle uk-flex-between">
+                    <div class="psp-header-info uk-flex uk-flex-middle uk-flex-between uk-text-align-end-m">
                         <div>
                                                             <h2 class="uk-h4 uk-margin-remove">Service status</h2>
                                                         <div class="uk-flex-inline">
@@ -77,7 +130,7 @@
         <div class="card psp-status uk-margin-bottom">
         <div class="uk-flex uk-flex-between uk-flex-middle uk-flex-wrap">
             <div class="psp-main-status-wrap uk-flex uk-flex-middle uk-flex-wrap">
-                <div class="psp-main-status-dot dot is-grey is-big m-r-30 uk-flex-none"></div>
+                <div class="psp-main-status-dot dot is-grey is-big uk-flex-none"></div>
                 <div class="psp-main-name-wrap uk-text-center uk-text-left@m">
                     <h2 class="psp-main-status uk-margin-remove"><span
                             class="uk-text-muted">Loading...</span></h2>
@@ -114,18 +167,18 @@
 
         <footer id="main-footer"
         class="uk-container uk-text-muted font-14 uk-flex uk-flex-between uk-flex-middle uk-margin-large-top uk-margin-large-bottom">
-        <div class="uk-visible@m">
-            <button type="button" class="enter-fullscreen uk-flex-inline uk-flex-middle m-r-10" data-fullscreen="false">
-                <svg class="icon icon-maximize font-18 m-r-5">
+        <div class="uk-visible@m uk-flex uk-flex-middle gap-10">
+            <button type="button" class="enter-fullscreen uk-flex-inline uk-flex-middle gap-5" data-fullscreen="false">
+                <svg class="icon icon-maximize font-18">
                     <use href="/assets/symbol-defs.svg#icon-maximize"></use>
                 </svg>
-                <svg class="icon icon-minimize font-18 m-r-5 uk-hidden">
+                <svg class="icon icon-minimize font-18 uk-hidden">
                     <use href="/assets/symbol-defs.svg#icon-minimize"></use>
                 </svg>
                 Fullscreen mode
             </button>
-            <button type="button" class="toggle-notif uk-flex-inline uk-flex-middle" data-notif="false">
-                <svg class="icon icon-bell-off font-18 m-r-5">
+            <button type="button" class="toggle-notif uk-flex-inline uk-flex-middle gap-5" data-notif="false">
+                <svg class="icon icon-bell-off font-18">
                     <use href="/assets/symbol-defs.svg#icon-bell-off"></use>
                 </svg>
                 <svg class="icon icon-bell font-18 m-r-5 uk-hidden">
